@@ -1,0 +1,90 @@
+.portfolio{
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+    .portfolio__block{
+        width: 100%;
+        max-height: 1450px;
+        @include dfc(start, center);
+        gap: 10px;
+        .portfolio__subtitle{
+            width: 100%;
+            height: 58px;
+            @include df();
+            p{
+                font-size: 45px;
+                font-weight: 600;
+                line-height: 56.25px;
+                color: $main-color;
+            }
+        }
+        .portfolio__desc{
+            width: 569px;
+            height: 58px;
+            @include df();
+            p{
+                font-size: $size-18;
+                font-weight: 400;
+                line-height: 28px;
+                color: $text;
+            }
+        }
+    }
+    .portfolio__wrapper{
+        width: 100%;
+        height: auto;
+        @include df(space-between, start);
+        flex-wrap: wrap;
+        margin-top: 50px;
+        gap: 50px;
+        .portfolio__card{
+            width: auto;
+            @include dfc(start, start);
+            gap: 10px;
+            .portfolio__img{
+                width: 500px;
+                height: 385px;
+            }
+            .portfolio__card__title{
+                width: 100%;
+                height: 30px;
+                margin-top: 30px;
+                p{
+                    font-size: 30px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    color: $main-color;
+                }
+            }
+            .portfolio__card__text{
+                width: 426px;
+                height: 77px;
+                margin-bottom: 10px;
+                p{
+                    font-size: $size-16;
+                    line-height: 25px;
+                    font-weight: 400;
+                }
+            }
+            .portfolio__btn{
+                border: none;
+                outline: none;
+                background: inherit;
+                p{
+                    font-size: $size-18;
+                    color: $main-color;
+                    font-weight: 500;
+                    line-height: 25px;
+                    transition: .5s;
+                    &:hover{
+                        cursor: pointer;
+                        color: $main-hover;
+                    }
+                    &:active{
+                        transform: scale(.9);
+                    }
+                }
+            }
+        }
+    }
+}

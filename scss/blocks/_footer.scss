@@ -1,0 +1,65 @@
+.footer{
+    width: 100%;
+    min-height: 344px;
+    @include df();
+    .container{
+        .footer__block{
+            width: 100%;
+            max-height: 344px;
+            @include df();
+            gap: 100px;
+            .footer__comment{
+                width: 344px;
+                height: 236px;
+                @include dfc(start, start);
+                gap: 20px;
+                .footer__logo{
+                   width: 77px; 
+                   height: 36px;
+                }
+                .footer__desc{
+                    width: 344px;
+                    height: 84px;
+                    margin-bottom: 35px;
+                    p{
+                        font-size: $size-18;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $text;
+                    }
+                }
+                .footer__icons{
+                    width: 100%;
+                    @include df(start, start);
+                    gap: 5px;
+                    .fa-facebook-f, .fa-instagram, .fa-twitter{
+                        width: 30px;
+                        height: 30px;
+                        color: $text;
+                        transition: .5s;
+                        @include df();
+                        &:hover{
+                            color: $main-hover;
+                            cursor: pointer;
+                        }
+                        &:active{
+                            transform: scale(.9);
+                        }
+                    }
+                }
+            }
+            .footer__collection{
+                line-height: 2;
+                .item{
+                    a{
+                        span{
+                            font-size: $size-18;
+                            font-weight: 400;
+                            line-height: 28px;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
